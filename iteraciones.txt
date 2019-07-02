@@ -1,0 +1,12 @@
+
+ng new angularoutes2
+angular-route
+axios
+ng serve
+ng generate component product-list
+--luego de crear registrar en app modules
+
+Routes en Angular 8
+-------------------------
+https://www.techiediaries.com/angular-router/
+https://www.techiediaries.com/angular-routing-tutorial/
