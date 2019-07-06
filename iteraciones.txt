@@ -10,3 +10,29 @@ Routes en Angular 8
 -------------------------
 https://www.techiediaries.com/angular-router/
 https://www.techiediaries.com/angular-routing-tutorial/
+
+
+Redux
+https://academia-binaria.com/el-patron-redux-con-ngrx-en-angular/
+
+npm i @angular-devkit/schematics --save-dev
+npm i @ngrx/schematics --save-dev
+ng config cli.defaultCollection @ngrx/schematics
+npm i @ngrx/store --save
+npm i @ngrx/store-devtools --save
+ng g st RootState --root -m app.module.ts --spec false
+npm install @ngrx/router-store --save
+
+Api Rest Angular 8
+----------
+npm install --save angular-in-memory-web-api
+$ ng generate service data
+$ ng generate service product 
+Next, open the src/app/product.service.ts
+
+ng generate class product
+
+$ ng generate component product-list
+$ ng generate component product-detail
+
+
