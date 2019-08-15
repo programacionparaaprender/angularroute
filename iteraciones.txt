@@ -12,6 +12,15 @@ https://www.techiediaries.com/angular-router/
 https://www.techiediaries.com/angular-routing-tutorial/
 
 
+Actualizar angular
+----------------------
+https://victorroblesweb.es/2018/05/24/pasar-un-proyecto-de-angular-5-a-angular-6/
+ng update
+ng update @angular/cli
+ng update @angular/core --force
+ng update @ngrx/store
+ng update rxjs
+
 Redux
 https://academia-binaria.com/el-patron-redux-con-ngrx-en-angular/
 
