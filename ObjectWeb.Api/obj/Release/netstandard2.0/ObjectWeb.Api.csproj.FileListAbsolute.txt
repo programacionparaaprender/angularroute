@@ -1,0 +1,8 @@
+C:\Users\Bus209\Documents\htdocs\ApiNetAngular\ObjectWeb.Api\bin\Release\netstandard2.0\ObjectWeb.Api.deps.json
+C:\Users\Bus209\Documents\htdocs\ApiNetAngular\ObjectWeb.Api\bin\Release\netstandard2.0\ObjectWeb.Api.dll
+C:\Users\Bus209\Documents\htdocs\ApiNetAngular\ObjectWeb.Api\bin\Release\netstandard2.0\ObjectWeb.Api.pdb
+C:\Users\Bus209\Documents\htdocs\ApiNetAngular\ObjectWeb.Api\obj\Release\netstandard2.0\ObjectWeb.Api.AssemblyInfoInputs.cache
+C:\Users\Bus209\Documents\htdocs\ApiNetAngular\ObjectWeb.Api\obj\Release\netstandard2.0\ObjectWeb.Api.AssemblyInfo.cs
+C:\Users\Bus209\Documents\htdocs\ApiNetAngular\ObjectWeb.Api\obj\Release\netstandard2.0\ObjectWeb.Api.dll
+C:\Users\Bus209\Documents\htdocs\ApiNetAngular\ObjectWeb.Api\obj\Release\netstandard2.0\ObjectWeb.Api.pdb
+C:\Users\Bus209\Documents\htdocs\ApiNetAngular\ObjectWeb.Api\obj\Release\netstandard2.0\ObjectWeb.Api.csprojAssemblyReference.cache

@@ -1,47 +1,54 @@
 
-ng new angularoutes2
-angular-route
-axios
-ng serve
-ng generate component product-list
---luego de crear registrar en app modules
+dotnet new reactredux -o ReactRedux
 
-Routes en Angular 8
--------------------------
-https://www.techiediaries.com/angular-router/
-https://www.techiediaries.com/angular-routing-tutorial/
+dotnet new sln
+
+dotnet add reference .\pro\pro.csproj
 
 
-Actualizar angular
-----------------------
-https://victorroblesweb.es/2018/05/24/pasar-un-proyecto-de-angular-5-a-angular-6/
-ng update
-ng update @angular/cli
-ng update @angular/core --force
-ng update @ngrx/store
-ng update rxjs
+npm ls | select-string typescript
 
-Redux
-https://academia-binaria.com/el-patron-redux-con-ngrx-en-angular/
-
-npm i @angular-devkit/schematics --save-dev
-npm i @ngrx/schematics --save-dev
-ng config cli.defaultCollection @ngrx/schematics
-npm i @ngrx/store --save
-npm i @ngrx/store-devtools --save
-ng g st RootState --root -m app.module.ts --spec false
-npm install @ngrx/router-store --save
-
-Api Rest Angular 8
-----------
-npm install --save angular-in-memory-web-api
-$ ng generate service data
-$ ng generate service product 
-Next, open the src/app/product.service.ts
-
-ng generate class product
-
-$ ng generate component product-list
-$ ng generate component product-detail
+npm install -g react-native-cli
 
 
+redux-persist
+https://stackoverflow.com/questions/48514147/rnredux-persist-autorehydrate-is-not-a-function
+https://www.npmjs.com/package/redux-persist
+
+
+// configureStore.js
+ 
+import { createStore } from 'redux'
+import { persistStore, persistReducer } from 'redux-persist'
+import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
+ 
+import rootReducer from './reducers'
+ 
+const persistConfig = {
+  key: 'root',
+  storage,
+}
+ 
+const persistedReducer = persistReducer(persistConfig, rootReducer)
+ 
+export default () => {
+  let store = createStore(persistedReducer)
+  let persistor = persistStore(store)
+  return { store, persistor }
+}
+
+//otro archivo
+
+import { PersistGate } from 'redux-persist/integration/react'
+ 
+// ... normal setup, create store and persistor, import components etc.
+ 
+const App = () => {
+  return (
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <RootComponent />
+      </PersistGate>
+    </Provider>
+  );
+};
