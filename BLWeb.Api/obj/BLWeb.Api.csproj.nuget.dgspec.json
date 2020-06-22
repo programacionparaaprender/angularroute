@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\BLWeb.Api\\BLWeb.Api.csproj": {}
+    "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\BLWeb.Api\\BLWeb.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\BLWeb.Api\\BLWeb.Api.csproj": {
+    "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\BLWeb.Api\\BLWeb.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\BLWeb.Api\\BLWeb.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\BLWeb.Api\\BLWeb.Api.csproj",
         "projectName": "BLWeb.Api",
-        "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\BLWeb.Api\\BLWeb.Api.csproj",
+        "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\BLWeb.Api\\BLWeb.Api.csproj",
         "packagesPath": "C:\\Users\\Bus209\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\BLWeb.Api\\obj\\",
+        "outputPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\BLWeb.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,11 +32,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\DALEWeb.Api\\DALEWeb.Api.csproj": {
-                "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\DALEWeb.Api\\DALEWeb.Api.csproj"
+              "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\DALEWeb.Api\\DALEWeb.Api.csproj": {
+                "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\DALEWeb.Api\\DALEWeb.Api.csproj"
               },
-              "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\ObjectWeb.Api\\ObjectWeb.Api.csproj": {
-                "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\ObjectWeb.Api\\ObjectWeb.Api.csproj"
+              "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\ObjectWeb.Api\\ObjectWeb.Api.csproj": {
+                "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\ObjectWeb.Api\\ObjectWeb.Api.csproj"
               }
             }
           }
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\Coneccion\\Coneccion.csproj": {
+    "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\Coneccion\\Coneccion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\Coneccion\\Coneccion.csproj",
+        "projectUniqueName": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\Coneccion\\Coneccion.csproj",
         "projectName": "Coneccion",
-        "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\Coneccion\\Coneccion.csproj",
+        "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\Coneccion\\Coneccion.csproj",
         "packagesPath": "C:\\Users\\Bus209\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\Coneccion\\obj\\",
+        "outputPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\Coneccion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -131,14 +131,14 @@
         }
       }
     },
-    "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\DALEWeb.Api\\DALEWeb.Api.csproj": {
+    "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\DALEWeb.Api\\DALEWeb.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\DALEWeb.Api\\DALEWeb.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\DALEWeb.Api\\DALEWeb.Api.csproj",
         "projectName": "DALEWeb.Api",
-        "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\DALEWeb.Api\\DALEWeb.Api.csproj",
+        "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\DALEWeb.Api\\DALEWeb.Api.csproj",
         "packagesPath": "C:\\Users\\Bus209\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\DALEWeb.Api\\obj\\",
+        "outputPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\DALEWeb.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -159,11 +159,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\Coneccion\\Coneccion.csproj": {
-                "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\Coneccion\\Coneccion.csproj"
+              "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\Coneccion\\Coneccion.csproj": {
+                "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\Coneccion\\Coneccion.csproj"
               },
-              "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\ObjectWeb.Api\\ObjectWeb.Api.csproj": {
-                "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\ObjectWeb.Api\\ObjectWeb.Api.csproj"
+              "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\ObjectWeb.Api\\ObjectWeb.Api.csproj": {
+                "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\ObjectWeb.Api\\ObjectWeb.Api.csproj"
               }
             }
           }
@@ -202,14 +202,14 @@
         }
       }
     },
-    "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\ObjectWeb.Api\\ObjectWeb.Api.csproj": {
+    "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\ObjectWeb.Api\\ObjectWeb.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\ObjectWeb.Api\\ObjectWeb.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\ObjectWeb.Api\\ObjectWeb.Api.csproj",
         "projectName": "ObjectWeb.Api",
-        "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\ObjectWeb.Api\\ObjectWeb.Api.csproj",
+        "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\ObjectWeb.Api\\ObjectWeb.Api.csproj",
         "packagesPath": "C:\\Users\\Bus209\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\ObjectWeb.Api\\obj\\",
+        "outputPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\ObjectWeb.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

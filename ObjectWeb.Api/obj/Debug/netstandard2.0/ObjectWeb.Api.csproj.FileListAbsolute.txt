@@ -30,3 +30,11 @@ C:\Users\Bus209\Documents\htdocs\angularroute2\ObjectWeb.Api\obj\Debug\netstanda
 C:\Users\Bus209\Documents\htdocs\angularroute2\ObjectWeb.Api\obj\Debug\netstandard2.0\ObjectWeb.Api.AssemblyInfo.cs
 C:\Users\Bus209\Documents\htdocs\angularroute2\ObjectWeb.Api\obj\Debug\netstandard2.0\ObjectWeb.Api.dll
 C:\Users\Bus209\Documents\htdocs\angularroute2\ObjectWeb.Api\obj\Debug\netstandard2.0\ObjectWeb.Api.pdb
+C:\Users\Bus209\Documents\htdocs\angularroute\ObjectWeb.Api\bin\Debug\netstandard2.0\ObjectWeb.Api.deps.json
+C:\Users\Bus209\Documents\htdocs\angularroute\ObjectWeb.Api\bin\Debug\netstandard2.0\ObjectWeb.Api.dll
+C:\Users\Bus209\Documents\htdocs\angularroute\ObjectWeb.Api\bin\Debug\netstandard2.0\ObjectWeb.Api.pdb
+C:\Users\Bus209\Documents\htdocs\angularroute\ObjectWeb.Api\obj\Debug\netstandard2.0\ObjectWeb.Api.csprojAssemblyReference.cache
+C:\Users\Bus209\Documents\htdocs\angularroute\ObjectWeb.Api\obj\Debug\netstandard2.0\ObjectWeb.Api.AssemblyInfoInputs.cache
+C:\Users\Bus209\Documents\htdocs\angularroute\ObjectWeb.Api\obj\Debug\netstandard2.0\ObjectWeb.Api.AssemblyInfo.cs
+C:\Users\Bus209\Documents\htdocs\angularroute\ObjectWeb.Api\obj\Debug\netstandard2.0\ObjectWeb.Api.dll
+C:\Users\Bus209\Documents\htdocs\angularroute\ObjectWeb.Api\obj\Debug\netstandard2.0\ObjectWeb.Api.pdb

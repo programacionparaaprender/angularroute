@@ -8,47 +8,54 @@ dotnet add reference .\pro\pro.csproj
 
 npm ls | select-string typescript
 
-npm install -g react-native-cli
 
 
-redux-persist
-https://stackoverflow.com/questions/48514147/rnredux-persist-autorehydrate-is-not-a-function
-https://www.npmjs.com/package/redux-persist
+
+instalar bootstrap en angular
+https://www.itsolutionstuff.com/post/install-bootstrap-4-in-angular-9-how-to-add-bootstrap-in-angular-9example.html
 
 
-// configureStore.js
- 
-import { createStore } from 'redux'
-import { persistStore, persistReducer } from 'redux-persist'
-import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
- 
-import rootReducer from './reducers'
- 
-const persistConfig = {
-  key: 'root',
-  storage,
-}
- 
-const persistedReducer = persistReducer(persistConfig, rootReducer)
- 
-export default () => {
-  let store = createStore(persistedReducer)
-  let persistor = persistStore(store)
-  return { store, persistor }
-}
+Actualizar angular
+https://update.angular.io/
+borrar el node_modules
 
-//otro archivo
 
-import { PersistGate } from 'redux-persist/integration/react'
- 
-// ... normal setup, create store and persistor, import components etc.
- 
-const App = () => {
-  return (
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <RootComponent />
-      </PersistGate>
-    </Provider>
-  );
-};
+
+ng new angularoutes2
+angular-route
+axios
+ng serve
+ng generate component product-list
+--luego de crear registrar en app modules
+
+Routes en Angular 8
+-------------------------
+https://www.techiediaries.com/angular-router/
+https://www.techiediaries.com/angular-routing-tutorial/
+
+
+
+
+
+Redux
+https://www.youtube.com/watch?v=uLZ-_4_qlPg
+
+
+ ng generate component reducers-component
+
+
+
+
+Api Rest Angular 8
+----------
+npm install --save angular-in-memory-web-api
+$ ng generate service data
+$ ng generate service product 
+Next, open the src/app/product.service.ts
+
+ng generate class product
+
+$ ng generate component product-list
+$ ng generate component product-detail
+
+

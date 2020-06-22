@@ -42,3 +42,14 @@ C:\Users\Bus209\Documents\htdocs\angularroute2\MiWeb.Util\obj\Debug\netstandard2
 C:\Users\Bus209\Documents\htdocs\angularroute2\MiWeb.Util\obj\Debug\netstandard2.0\MiWeb.Util.csproj.CopyComplete
 C:\Users\Bus209\Documents\htdocs\angularroute2\MiWeb.Util\obj\Debug\netstandard2.0\MiWeb.Util.dll
 C:\Users\Bus209\Documents\htdocs\angularroute2\MiWeb.Util\obj\Debug\netstandard2.0\MiWeb.Util.pdb
+C:\Users\Bus209\Documents\htdocs\angularroute\MiWeb.Util\bin\Debug\netstandard2.0\MiWeb.Util.deps.json
+C:\Users\Bus209\Documents\htdocs\angularroute\MiWeb.Util\bin\Debug\netstandard2.0\MiWeb.Util.dll
+C:\Users\Bus209\Documents\htdocs\angularroute\MiWeb.Util\bin\Debug\netstandard2.0\MiWeb.Util.pdb
+C:\Users\Bus209\Documents\htdocs\angularroute\MiWeb.Util\bin\Debug\netstandard2.0\ObjectWeb.Api.dll
+C:\Users\Bus209\Documents\htdocs\angularroute\MiWeb.Util\bin\Debug\netstandard2.0\ObjectWeb.Api.pdb
+C:\Users\Bus209\Documents\htdocs\angularroute\MiWeb.Util\obj\Debug\netstandard2.0\MiWeb.Util.csprojAssemblyReference.cache
+C:\Users\Bus209\Documents\htdocs\angularroute\MiWeb.Util\obj\Debug\netstandard2.0\MiWeb.Util.AssemblyInfoInputs.cache
+C:\Users\Bus209\Documents\htdocs\angularroute\MiWeb.Util\obj\Debug\netstandard2.0\MiWeb.Util.AssemblyInfo.cs
+C:\Users\Bus209\Documents\htdocs\angularroute\MiWeb.Util\obj\Debug\netstandard2.0\MiWeb.Util.csproj.CopyComplete
+C:\Users\Bus209\Documents\htdocs\angularroute\MiWeb.Util\obj\Debug\netstandard2.0\MiWeb.Util.dll
+C:\Users\Bus209\Documents\htdocs\angularroute\MiWeb.Util\obj\Debug\netstandard2.0\MiWeb.Util.pdb

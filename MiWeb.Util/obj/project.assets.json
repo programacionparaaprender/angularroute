@@ -203,11 +203,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\MiWeb.Util\\MiWeb.Util.csproj",
+      "projectUniqueName": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\MiWeb.Util\\MiWeb.Util.csproj",
       "projectName": "MiWeb.Util",
-      "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\MiWeb.Util\\MiWeb.Util.csproj",
+      "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\MiWeb.Util\\MiWeb.Util.csproj",
       "packagesPath": "C:\\Users\\Bus209\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\MiWeb.Util\\obj\\",
+      "outputPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\MiWeb.Util\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -228,8 +228,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\ObjectWeb.Api\\ObjectWeb.Api.csproj": {
-              "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute2\\ObjectWeb.Api\\ObjectWeb.Api.csproj"
+            "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\ObjectWeb.Api\\ObjectWeb.Api.csproj": {
+              "projectPath": "C:\\Users\\Bus209\\Documents\\htdocs\\angularroute\\ObjectWeb.Api\\ObjectWeb.Api.csproj"
             }
           }
         }

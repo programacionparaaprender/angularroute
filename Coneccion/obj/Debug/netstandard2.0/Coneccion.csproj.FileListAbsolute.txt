@@ -30,3 +30,11 @@ C:\Users\Bus209\Documents\htdocs\angularroute2\Coneccion\obj\Debug\netstandard2.
 C:\Users\Bus209\Documents\htdocs\angularroute2\Coneccion\obj\Debug\netstandard2.0\Coneccion.AssemblyInfo.cs
 C:\Users\Bus209\Documents\htdocs\angularroute2\Coneccion\obj\Debug\netstandard2.0\Coneccion.dll
 C:\Users\Bus209\Documents\htdocs\angularroute2\Coneccion\obj\Debug\netstandard2.0\Coneccion.pdb
+C:\Users\Bus209\Documents\htdocs\angularroute\Coneccion\bin\Debug\netstandard2.0\Coneccion.deps.json
+C:\Users\Bus209\Documents\htdocs\angularroute\Coneccion\bin\Debug\netstandard2.0\Coneccion.dll
+C:\Users\Bus209\Documents\htdocs\angularroute\Coneccion\bin\Debug\netstandard2.0\Coneccion.pdb
+C:\Users\Bus209\Documents\htdocs\angularroute\Coneccion\obj\Debug\netstandard2.0\Coneccion.csprojAssemblyReference.cache
+C:\Users\Bus209\Documents\htdocs\angularroute\Coneccion\obj\Debug\netstandard2.0\Coneccion.AssemblyInfoInputs.cache
+C:\Users\Bus209\Documents\htdocs\angularroute\Coneccion\obj\Debug\netstandard2.0\Coneccion.AssemblyInfo.cs
+C:\Users\Bus209\Documents\htdocs\angularroute\Coneccion\obj\Debug\netstandard2.0\Coneccion.dll
+C:\Users\Bus209\Documents\htdocs\angularroute\Coneccion\obj\Debug\netstandard2.0\Coneccion.pdb
