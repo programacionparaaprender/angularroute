@@ -43,7 +43,7 @@ https://www.youtube.com/watch?v=uLZ-_4_qlPg
 
  ng generate component reducers-component
 
-
+ng generate component products-component
 
 
 Api Rest Angular 8
