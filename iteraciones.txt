@@ -1,11 +1,3 @@
-
-dotnet new reactredux -o ReactRedux
-
-dotnet new sln
-
-dotnet add reference .\pro\pro.csproj
-
-
 npm ls | select-string typescript
 
 
