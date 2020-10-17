@@ -18,17 +18,13 @@ export class TodoTasksComponent implements OnInit {
   ngOnInit(): void {
   }
   // Disparamos la acción
+
   public async addTask() : Promise<void> {
-    var response;
     try{
-      response = await axios.get(api,{
-        params:{
-          empresaId: 1
-        }
-      });
-      if(response.status == 200){
-        alert(JSON.stringify(response.data));
-      }
+      let response = await fetch(api);
+      let data = await response.json()
+      alert(JSON.stringify(data));
+      
     }catch(error){
       alert(error);
     }
