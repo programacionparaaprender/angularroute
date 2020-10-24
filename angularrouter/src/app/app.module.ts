@@ -25,6 +25,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 localStorage.setItem('URL', 'https://localhost:44382/');
 
+
+
+
   import { MAT_LABEL_GLOBAL_OPTIONS, MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
   import { MatIconRegistry } from '@angular/material/icon';
   import { MatAutocompleteModule } from '@angular/material/autocomplete';
@@ -61,7 +64,9 @@ localStorage.setItem('URL', 'https://localhost:44382/');
   import { MatTooltipModule } from '@angular/material/tooltip';
   import { MatTreeModule } from '@angular/material/tree';
   import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GeocercaGoogleComponent } from './geocerca-google/geocerca-google.component';
 
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -69,9 +74,11 @@ localStorage.setItem('URL', 'https://localhost:44382/');
     AddTaskComponent,
     ViejaComponent,
     ListTasksComponent,
-    TodoTasksComponent
+    TodoTasksComponent,
+    GeocercaGoogleComponent
   ],
   imports: [
+    
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
       logOnly: environment.production, // Restrict extension to log-only mode
@@ -80,6 +87,9 @@ localStorage.setItem('URL', 'https://localhost:44382/');
     FormsModule,
     ReactiveFormsModule,
     BrowserModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDZktO_JnnvrY4BnD2IyZo8PqNXiDTWP1w'
+    }),
     StoreModule.forRoot({tasks: taskReducer}),
     AppRoutingModule,
     BrowserAnimationsModule,
