@@ -62,9 +62,19 @@ $ ng generate component product-detail
 ### publicar en github
 https://medium.com/tech-insights/how-to-deploy-angular-apps-to-github-pages-gh-pages-896c4e10f9b4
 
+npm i angular-cli-ghpages --save-dev
+
 ng build --prod --base-href "https://programacionparaaprender.github.io/angularroute/"
+
+npx angular-cli-ghpages —dir=dist/angularroute
+
+ng build --base-href=/angularroute/
 
 corrección error ERROR in Exceeded maximum budget for app.component.css. Budget 10 kB was not met by 132 kB with a total of 142 kB.
 
 
 https://stackoverflow.com/questions/53995948/warning-in-budgets-maximum-exceeded-for-initial
+
+
+
+

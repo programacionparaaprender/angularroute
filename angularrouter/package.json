@@ -25,6 +25,7 @@
     "@angular/router": "~9.1.1",
     "@ngrx/store": "^9.1.0",
     "@ngrx/store-devtools": "^9.1.0",
+    "angular-cli-ghpages": "^1.0.0-rc.1",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
