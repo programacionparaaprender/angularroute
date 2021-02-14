@@ -90,6 +90,7 @@ ng deploy --base-href=https://programacionparaaprender.github.io/angularroute/
 
 luego ya tienes el dist listo
 
+
 crear el gh-pages
 
 
