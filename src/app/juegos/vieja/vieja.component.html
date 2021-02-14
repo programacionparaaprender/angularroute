@@ -1,0 +1,90 @@
+<p>vieja works!</p>
+    <div>
+    <div className="game">
+              <div className="game-board">
+                <div style="float: left;width: 300px;display:block;">
+                <div style="float:left;width:100%;" className="board-row">
+                <div style="float: left;width: 33.33%;">
+                    <button 
+                    (click)="handleClick(0)"
+                    style="margin:0; paddingLeft: 0; listStyle: none; width:100px; height:100px;" className="square">
+                      {{squares[0]}}
+                    </button>
+                </div>
+                <div style="float: left;width: 33.33%;">
+                    <button 
+                    (click)="handleClick(1)"
+                    style="margin:0; paddingLeft: 0; listStyle: none; width:100px; height:100px;" className="square">
+                      {{squares[1]}}
+                    </button>
+                </div>
+                <div style="float: left;width: 33.33%;">
+                    <button 
+                    (click)="handleClick(2)"
+                    style="margin:0; paddingLeft: 0; listStyle: none; width:100px; height:100px;" className="square">
+                      {{squares[2]}}
+                    </button>
+                </div>
+                <div style="float:left;width:100%;" className="board-row">
+                <div style="float: left;width: 33.33%;">
+                    <button 
+                    (click)="handleClick(3)"
+                    style="margin:0; paddingLeft: 0; listStyle: none; width:100px; height:100px;" className="square">
+                      {{squares[3]}}
+                    </button>
+                </div>
+                <div style="float: left;width: 33.33%;">
+                    <button 
+                    (click)="handleClick(4)"
+                    style="margin:0; paddingLeft: 0; listStyle: none; width:100px; height:100px;" className="square">
+                      {{squares[4]}}
+                    </button>
+                </div>
+                <div style="float: left;width: 33.33%;">
+                    <button 
+                    (click)="handleClick(5)"
+                    style="margin:0; paddingLeft: 0; listStyle: none; width:100px; height:100px;" className="square">
+                      {{squares[5]}}
+                    </button>
+                </div>
+                </div>
+                <div style="float:left;width:100%;" className="board-row">
+                <div style="float: left;width: 33.33%;">
+                    <button 
+                    (click)="handleClick(6)"
+                    style="margin:0; paddingLeft: 0; listStyle: none; width:100px; height:100px;" className="square">
+                      {{squares[6]}}
+                    </button>
+                </div>
+                <div style="float: left;width: 33.33%;">
+                    <button 
+                    (click)="handleClick(7)"
+                    style="margin:0; paddingLeft: 0; listStyle: none; width:100px; height:100px;" className="square">
+                      {{squares[7]}}
+                    </button>
+                </div>
+                <div style="float: left;width: 33.33%;">
+                    <button 
+                    (click)="handleClick(8)"
+                    style="margin:0; paddingLeft: 0; listStyle: none; width:100px; height:100px;" className="square">
+                      {{squares[8]}}
+                    </button>
+                </div>
+                </div>
+                </div>
+                </div>
+              </div>
+              <div style="float:left;width:100%;" className="game-info">
+                <div style="float:left;width:100%;">
+                    {{quiengano}}      
+                </div>     
+                <div style="float:left;width:100%;">
+                   <ol>
+                     <li  *ngFor="let item of history; let i = index">
+                      <button (click)="jumpTo(i)">Go to move #{{i}}</button>
+                    </li>
+                    </ol>   
+                </div>   
+              </div>
+            </div>
+    </div>

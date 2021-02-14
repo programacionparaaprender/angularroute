@@ -86,12 +86,9 @@ ng add angular-cli-ghpages
 
 ng deploy --repo=https://github.com/programacionparaaprender/angularroute.git
 
-ng deploy --base-href=/angularroute/
+ng deploy --base-href=https://programacionparaaprender.github.io/angularroute/
 
-ng deploy --base-href=/
-
-ng deploy your-angular-project --base-href=/angularroute/
-
+luego ya tienes el dist listo
 
 corrección error ERROR in Exceeded maximum budget for app.component.css. Budget 10 kB was not met by 132 kB with a total of 142 kB.
 
