@@ -93,6 +93,7 @@ luego ya tienes el dist listo
 
 crear el gh-pages
 
+
 pero los cambios los subes a la rama master
 
 
