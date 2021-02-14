@@ -1,10 +1,12 @@
 npm ls | select-string typescript
 
-## pendiente
+### ejemplo de geocerca
+
+#### pendiente
 https://angular-maps.com/guides/getting-started/
 https://angular-maps.com/api-docs/agm-core/directives/agmpolygon
 npm install @agm/core
-## si da error
+#### si da error
 https://github.com/DefinitelyTyped/DefinitelyTyped/issues/48574
 npm install @types/googlemaps@3.39.12 --save-dev
 npm install @agm/core --save
@@ -15,6 +17,10 @@ npm install @agm/core@1.1.0 --save
 
 
 ng generate component geocerca-google
+
+### ejemplo de geocerca teoria
+https://developers.google.com/location-context/geofencing/
+
 
 ## instalar bootstrap en angular
 https://www.itsolutionstuff.com/post/install-bootstrap-4-in-angular-9-how-to-add-bootstrap-in-angular-9example.html
@@ -70,10 +76,30 @@ npx angular-cli-ghpages —dir=dist/angularroute
 
 ng build --base-href=/angularroute/
 
+ng build --base-href=/
+
+### pasos para publicar con angular-cli-ghpages
+https://www.npmjs.com/package/angular-cli-ghpages
+ng add angular-cli-ghpages@next
+si no funciona
+ng add angular-cli-ghpages
+
+ng deploy --repo=https://github.com/programacionparaaprender/angularroute.git
+
+ng deploy --base-href=/angularroute/
+
+ng deploy your-angular-project --base-href=/angularroute/
+
+
 corrección error ERROR in Exceeded maximum budget for app.component.css. Budget 10 kB was not met by 132 kB with a total of 142 kB.
 
 
 https://stackoverflow.com/questions/53995948/warning-in-budgets-maximum-exceeded-for-initial
+
+
+
+
+
 
 
 
