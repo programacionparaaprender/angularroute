@@ -90,6 +90,9 @@ ng deploy --base-href=https://programacionparaaprender.github.io/angularroute/
 
 luego ya tienes el dist listo
 
+crear el gh-pages
+
+
 corrección error ERROR in Exceeded maximum budget for app.component.css. Budget 10 kB was not met by 132 kB with a total of 142 kB.
 
 
