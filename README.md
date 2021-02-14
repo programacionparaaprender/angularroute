@@ -88,6 +88,8 @@ ng deploy --repo=https://github.com/programacionparaaprender/angularroute.git
 
 ng deploy --base-href=/angularroute/
 
+ng deploy --base-href=/
+
 ng deploy your-angular-project --base-href=/angularroute/
 
 
