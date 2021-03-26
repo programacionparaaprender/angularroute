@@ -3,7 +3,15 @@ import { Component, OnInit } from '@angular/core';
 //import { LatLng, LatLngLiteral, PolyMouseEvent } from '../services/google-maps-types';
 import { AgmCoreModule, LatLng, LatLngLiteral, PolyMouseEvent } from '@agm/core';
 
+import { Router } from '@angular/router';
 
+import { AppState } from './../app.state';
+import * as TaskActions from './../store/login.actions';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { Tio } from '../models/tio';
+import { TioService } from '../tio/tio.service';
 
 @Component({
   selector: 'app-geocerca-google',
@@ -24,6 +32,7 @@ export class GeocercaGoogleComponent implements OnInit {
   color = "black";
   visible = true;
   paths: LatLngLiteral[] = []
+  login: Observable<Tio[]>;
   /* paths: Array<LatLngLiteral> = [
     {lat:51.69612661762577,lng:6.756516564459343},
     {lat:51.9710789023937,lng:7.025681603521843},
@@ -39,7 +48,21 @@ export class GeocercaGoogleComponent implements OnInit {
     *     { lat: 10, lng: 10 },
     *     { lat: 0,  lng: 10 }
     *   ] */
-  constructor() { }
+  constructor(private tioService: TioService, private router: Router,private store: Store<AppState>) { 
+    this.login = this.store.select('login');
+    if(localStorage.getItem('login')){
+      const usuario = JSON.parse(localStorage.getItem('login'))
+      //console.log('login')
+      //console.log(localStorage.getItem('login'))
+      if(usuario.nombre != 'error'){
+        this.router.navigate(['/']);
+      }else{
+        this.router.navigate(['/login']);
+      }
+    } 
+
+
+  }
   
   ngOnInit(): void {
   }

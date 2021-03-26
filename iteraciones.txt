@@ -115,6 +115,20 @@ Estados persistentes
 https://www.npmjs.com/package/ngrx-store-persist
 
 
+------------------------
+Peticiones más sencillas
+-------------------------
+https://www.npmjs.com/package/axios
+npm install @types/axios
+npm install --save axios
+
+----------------------
+Pediente el login
+------------------------
+https://ngrx.io/guide/store/selectors
+https://angular-2-training-book.rangle.io/state-management/ngrx/reading_your_application_state_using_selectors
+
+
 
 
 
