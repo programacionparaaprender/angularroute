@@ -1,0 +1,12 @@
+<div class="left">
+  <input class="form-control" type="text" placeholder="username" #username>
+  <input class="form-control" type="text" placeholder="password" #password>
+  <input class="form-control" type="text" placeholder="firstName" #firstName>
+  <input class="form-control" type="text" placeholder="lastName" #lastName>
+  <button 
+    class="btn btn-brimary"
+    (click)="AñadirUsuario(username.value, password.value, firstName.value, lastName.value)">
+    Crear Usuario
+  </button>
+</div>
+

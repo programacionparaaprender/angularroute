@@ -1,0 +1,14 @@
+<div class="container mt-3" *ngIf="tio">
+    <div class="card text-center">
+        <div class="card-header">
+            <h5 class="card-title">Detalles de {{tio.nombre}}</h5>
+        </div>
+        <div class="card-body">
+            <p class="card-text"><b>Nombre: </b>{{tio.nombre}}</p>
+            <p class="card-text"><b>Correo: </b>{{tio.email}}</p>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-outline-primary btn-lg" (click)="volver()">Volver</button>
+        </div>
+    </div>
+</div>

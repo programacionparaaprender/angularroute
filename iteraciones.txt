@@ -89,6 +89,8 @@ ng add angular-cli-ghpages
 
 ng deploy --repo=https://github.com/programacionparaaprender/angularroute.git
 
+este siempre ejecutarlo para generar ->
+
 ng deploy --base-href=https://programacionparaaprender.github.io/angularroute/
 
 luego ya tienes el dist listo
@@ -107,6 +109,10 @@ corrección error ERROR in Exceeded maximum budget for app.component.css. Budget
 
 https://stackoverflow.com/questions/53995948/warning-in-budgets-maximum-exceeded-for-initial
 
+-----------------------
+Estados persistentes
+-----------------------
+https://www.npmjs.com/package/ngrx-store-persist
 
 
 

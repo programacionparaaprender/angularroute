@@ -5,7 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { StoreModule } from '@ngrx/store';
+
+import { storageSyncMetaReducer } from 'ngrx-store-persist';
+
 import { taskReducer } from './store/tasks.reducer';
+import { userReducer } from './store/users.reducer';
+import { loginReducer } from './store/login.reducer';
+
+
 import { AddTaskComponent } from './tasks/add-task/add-task.component';
 import { ListTasksComponent } from './tasks/list-tasks/list-tasks.component';
 import { ViejaComponent } from './juegos/vieja/vieja.component';
@@ -68,6 +75,14 @@ import { GeocercaGoogleComponent } from './geocerca-google/geocerca-google.compo
 
 import { AgmCoreModule } from '@agm/core';
 
+
+import { MenuComponent } from './menu/menu.component';
+import { ListaTioComponent } from './tio/lista-tio.component';
+import { NuevoTioComponent } from './tio/nuevo-tio.component';
+import { DetalleTioComponent } from './tio/detalle-tio.component';
+import { ActualizarTioComponent } from './tio/actualizar-tio.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,7 +90,12 @@ import { AgmCoreModule } from '@agm/core';
     ViejaComponent,
     ListTasksComponent,
     TodoTasksComponent,
-    GeocercaGoogleComponent
+    GeocercaGoogleComponent,
+    MenuComponent,
+    ListaTioComponent,
+    NuevoTioComponent,
+    DetalleTioComponent,
+    ActualizarTioComponent
   ],
   imports: [
     
@@ -90,7 +110,18 @@ import { AgmCoreModule } from '@agm/core';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDZktO_JnnvrY4BnD2IyZo8PqNXiDTWP1w'
     }),
-    StoreModule.forRoot({tasks: taskReducer}),
+    /* StoreModule.forRoot({
+      tasks: taskReducer,
+      users: userReducer,
+      login: loginReducer
+    }), */
+    StoreModule.forRoot({
+      tasks: taskReducer,
+      users: userReducer,
+      login: loginReducer
+    }, { 
+      metaReducers: [storageSyncMetaReducer] 
+    }),
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,

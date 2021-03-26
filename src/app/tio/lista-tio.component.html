@@ -1,0 +1,27 @@
+<table class="table table-dark text-center">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">email</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let tio of tios | async">
+            <td>{{tio.id}}</td>
+            <td>{{tio.nombre}}</td>
+            <td>{{tio.email}}</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button class="btn btn-outline-primary" routerLink="/detalle/{{tio.id}}">Ver</button>
+                    <button class="btn btn-outline-warning" routerLink="/actualizar/{{tio.id}}">Editar</button>
+                    <button class="btn btn-outline-danger" (click)="borrar(tio.id)">Borrar</button>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div>
+    <button class="btn btn-outline-success btn-lg" routerLink="/nuevo">Nuevo</button>
+</div>
