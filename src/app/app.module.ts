@@ -82,7 +82,7 @@ import { NuevoTioComponent } from './tio/nuevo-tio.component';
 import { DetalleTioComponent } from './tio/detalle-tio.component';
 import { ActualizarTioComponent } from './tio/actualizar-tio.component';
 import { LoginUsuariosComponent } from './tio/login-usuarios/login-usuarios.component';
-
+import { RegistrarUsuariosComponent } from './tio/registrar-usuarios/registrar-usuarios.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -96,7 +96,8 @@ import { LoginUsuariosComponent } from './tio/login-usuarios/login-usuarios.comp
     NuevoTioComponent,
     DetalleTioComponent,
     LoginUsuariosComponent,
-    ActualizarTioComponent
+    ActualizarTioComponent,
+    RegistrarUsuariosComponent
   ],
   imports: [
     

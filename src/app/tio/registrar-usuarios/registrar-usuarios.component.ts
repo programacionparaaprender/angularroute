@@ -37,16 +37,21 @@ export class RegistrarUsuariosComponent implements OnInit {
   ngOnInit() {
   }
 
-  onCreate(): void {
+  async onCreate() {
     this.tio = new Tio(this.nombre, this.email, this.password);
-    this.tioService.nuevo(this.tio).subscribe(
-      data => {
-        alert(data.mensaje);
-        this.router.navigate(['/']);
-      },
-      err => {
-        alert(err.error.mensaje);
-      }
-    );
+    var response = await this.tioService.registrar(this.tio);
+    if(response.status==200){
+      const data = response.data;
+      const usuario = data[0];
+      this.store.dispatch(new TaskActions.RegistroUsuario({
+        id: usuario.id,
+        nombre: usuario.nombre,
+        email: usuario.email,
+        password: usuario.password
+      }) )
+      this.router.navigate(['/']);
+    }else{
+      console.log('ocurrio un error')
+    }
   }
 }

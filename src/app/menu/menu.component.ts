@@ -6,9 +6,11 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Tio } from '../models/tio';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { LoginUsuariosComponent } from '../tio/login-usuarios/login-usuarios.component';
+
+import { Location } from "@angular/common";
 
 @Component({
   selector: 'app-menu',
@@ -26,7 +28,7 @@ export class MenuComponent implements OnInit {
   email = 'zddfdfdsfd';
   password = '';
   usuariologeado = false;
-  constructor(private router: Router, private store: Store<AppState>) {
+  constructor(location: Location, private router: Router, private store: Store<AppState>) {
     this.login = this.store.select('login');
     if(localStorage.getItem('login')){
       const usuario = JSON.parse(localStorage.getItem('login'))
@@ -34,8 +36,14 @@ export class MenuComponent implements OnInit {
         this.usuariologeado = true;
       }else{
         this.usuariologeado = false;
-        this.router.navigate(['/login']);
+        
+        console.log('location')
+        //console.log(this.router.url)
+        //console.log(this.activatedRoute.url);
+        //this.router.navigate(['/login']);
       }
+    }else{
+
     }
   }
   /* ngAfterViewInit() {

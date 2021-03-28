@@ -7,7 +7,7 @@
       <h3>name: {{ task.nombre }} </h3>
     </li>
   </ul> -->
-<form #f=ngForm (ngSubmit)="onLogin()" novalidate>
+<form (ngSubmit)="onLogin()" novalidate>
     <div class="form-group">
         <label for="nombre">Nombre:</label>
         <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
@@ -24,8 +24,7 @@
     <div class="btn-group" role="group" aria-label="Basic example">
         <button 
             type="submit" 
-            class="btn btn-outline-success btn-lg" 
-            [disabled]="!f.valid">
+            class="btn btn-outline-success btn-lg">
             Login
         </button>
         <input class="btn btn-danger" type="reset" value="Reset" />

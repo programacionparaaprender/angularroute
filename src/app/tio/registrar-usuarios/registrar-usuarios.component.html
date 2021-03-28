@@ -1,28 +1,38 @@
-<form #f=ngForm (ngSubmit)="onCreate()" novalidate>
-    <div class="form-group">
-        <label for="nombre">Nombre:</label>
-        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+<div style="display:block;width:100%;height:5rem;"></div>
+<div class="card card-default" style="width:25rem;margin:auto;">
+<div class="card-body">
+    <div class="card-header text-center"><h3>Registro</h3></div>
+  <!-- <ul>
+    <li *ngFor="let task of login | async">
+      <h3>name: {{ task.nombre }} </h3>
+    </li>
+  </ul> -->
+    <form (ngSubmit)="onCreate()" novalidate>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input 
+                type="password" 
+                class="form-control" 
+                id="password" 
+                name="password" 
+                [(ngModel)]="password" required>
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button 
+                type="submit" 
+                class="btn btn-outline-success btn-lg">
+                Crear
+            </button>
+            <input class="btn btn-danger" type="reset" value="Reset" />
+        </div>
+    </form>
     </div>
-    <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email" required>
-    </div>
-    <div class="form-group">
-        <label for="password">Password:</label>
-        <input 
-            type="password" 
-            class="form-control" 
-            id="password" 
-            name="password" 
-            [(ngModel)]="password" required>
-    </div>
-    <div class="btn-group" role="group" aria-label="Basic example">
-        <button 
-            type="submit" 
-            class="btn btn-outline-success btn-lg" 
-            [disabled]="!f.valid">
-            Crear
-        </button>
-        <input class="btn btn-danger" type="reset" value="Reset" />
-    </div>
-</form>
+</div>

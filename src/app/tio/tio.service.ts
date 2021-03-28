@@ -11,7 +11,7 @@ import axios from "axios";
 
 export class TioService {
 
-  tioURL = 'http://localhost:8080/tio/';
+  tioURL = 'https://servicios-profesionales.herokuapp.com/tio/';
   usuariologeado = false;
   constructor(private httpClient: HttpClient) { }
 
@@ -41,11 +41,20 @@ export class TioService {
       return e.response;
     }
   }
-
-
-  registrar(tio: Tio): Observable<any> {
-    return this.httpClient.post<any>(this.tioURL + 'nuevo', tio);
+  async registrar(tio: Tio){
+    try{
+      var response;
+      response = await axios.post(this.tioURL+'nuevo', tio);
+      return response;
+      
+    }catch(e){
+      return e.response;
+    }
   }
+
+  /* registrar(tio: Tio): Observable<any> {
+    return this.httpClient.post<any>(this.tioURL + 'nuevo', tio);
+  } */
 
   nuevo(tio: Tio): Observable<any> {
     return this.httpClient.post<any>(this.tioURL + 'nuevo', tio);
