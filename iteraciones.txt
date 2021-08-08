@@ -93,6 +93,8 @@ este siempre ejecutarlo para generar ->
 
 ng deploy --base-href=https://programacionparaaprender.github.io/angularroute/
 
+ejecutar siempre desde git cmd npm run github
+
 luego ya tienes el dist listo
 
 

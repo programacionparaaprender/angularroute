@@ -6,6 +6,7 @@
     "start": "ng serve --port 4200",
     "start2": "ng serve --port 8080",
     "build": "ng build",
+    "github":"ng deploy --base-href=https://programacionparaaprender.github.io/angularroute/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
