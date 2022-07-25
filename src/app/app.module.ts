@@ -20,6 +20,11 @@ import { environment } from '../environments/environment';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodoTasksComponent } from './tasks/todo-tasks/todo-tasks.component';
+
+import { BlockChainComponent } from './blockchain/blockchain.component';
+
+
+
 import { HttpClientModule } from '@angular/common/http';
 /* import { 
   MatToolbarModule, 
@@ -83,8 +88,13 @@ import { DetalleTioComponent } from './tio/detalle-tio.component';
 import { ActualizarTioComponent } from './tio/actualizar-tio.component';
 import { LoginUsuariosComponent } from './tio/login-usuarios/login-usuarios.component';
 import { RegistrarUsuariosComponent } from './tio/registrar-usuarios/registrar-usuarios.component';
+import { TokenJavaComponent } from './accederwebtoken/tokenjava/tokenjava.component';
+
+import { TokenizedInterceptorProviders } from "src/app/services/tokenized.interceptor.service";
+
 @NgModule({
   declarations: [
+    TokenJavaComponent,
     AppComponent,
     AddTaskComponent,
     ViejaComponent,
@@ -97,7 +107,8 @@ import { RegistrarUsuariosComponent } from './tio/registrar-usuarios/registrar-u
     DetalleTioComponent,
     LoginUsuariosComponent,
     ActualizarTioComponent,
-    RegistrarUsuariosComponent
+    RegistrarUsuariosComponent,
+    BlockChainComponent
   ],
   imports: [
     
@@ -135,7 +146,9 @@ import { RegistrarUsuariosComponent } from './tio/registrar-usuarios/registrar-u
     MatIconModule, 
     MatFormFieldModule
   ],
-  providers: [],
+  providers: [
+    TokenizedInterceptorProviders,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

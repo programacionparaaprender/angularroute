@@ -13,7 +13,11 @@ import { LoginUsuariosComponent } from './tio/login-usuarios/login-usuarios.comp
 
 import { RegistrarUsuariosComponent } from './tio/registrar-usuarios/registrar-usuarios.component';
 
+
+import { BlockChainComponent } from './blockchain/blockchain.component';
+
 import { Tio } from './models/tio'
+import { TokenJavaComponent } from './accederwebtoken/tokenjava/tokenjava.component';
 
 var usuario: Tio = {
   id: 1,
@@ -29,7 +33,10 @@ if(localStorage.getItem('login')){
 }
 
 const routes: Routes = [
-  { path: '',  redirectTo: '/geocerca', pathMatch: 'full' },
+  { path: '',  redirectTo: '/tokenjava', pathMatch: 'full' },
+  {path: 'tokenjava' , component: TokenJavaComponent},
+  {path: 'blockchain' , component: BlockChainComponent},
+  {path: 'blockchain' , component: BlockChainComponent},
   {path: 'login' , component: LoginUsuariosComponent},
   {path: 'registro' , component: RegistrarUsuariosComponent},
   {

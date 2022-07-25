@@ -1,0 +1,51 @@
+<div>
+    <div class="card">
+        <div class="card card-default">
+            <div class="card-body">
+                <div class="card-header">
+                    Obtener token y luego data
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" (click)="obtenerToken()">Obtener token</button>
+                    <input [(ngModel)]="inputtoken" id="iToken" name="nToken" value="" class="form-control" />
+                </div>
+                
+                <button class="btn btn-primary" (click)="obtenerUsuarios()">Mostrar usuarios</button>
+                <button class="btn btn-primary" (click)="obtenerUsuariosSinToken()">Mostrar usuarios sin token</button>
+                <div class="form-group">
+                    <label>
+                        Ingrese nombre
+                    </label>
+                    <input [(ngModel)]="nombre" class="form-control" />
+                </div>
+                <button class="btn btn-secondary" (click)="obtenerUsuariosAPI2Name()">Mostrar usuarios api 2 name</button>
+                <button class="btn btn-info" (click)="obtenerUsuariosAPI2Id()">Mostrar usuarios api 2 id</button>
+               <!--  <table class="table table-dark text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">email</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let tio of lista | async">
+                            <td>{{tio.id}}</td>
+                            <td>{{tio.nombre}}</td>
+                            <td>{{tio.email}}</td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button class="btn btn-outline-primary" routerLink="/detalle/{{tio.id}}">Ver</button>
+                                    <button class="btn btn-outline-warning" routerLink="/actualizar/{{tio.id}}">Editar</button>
+                                    <button class="btn btn-outline-danger">Borrar</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> -->
+            </div>
+        </div>
+    </div>
+
+</div>
