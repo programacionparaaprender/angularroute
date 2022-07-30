@@ -38,7 +38,7 @@ export class TokenJavaComponent implements OnInit {
       email: "",
       password: ""
     };
-    var token = await this.tokenService.login(tio);
+    var token = await this.tokenService.login2();
     this.inputtoken = token;
   }
 

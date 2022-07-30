@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
-
 import { AppState } from './../app.state';
 import * as TaskActions from './../store/login.actions';
 import { Store } from '@ngrx/store';
@@ -7,10 +6,10 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Tio } from '../models/tio';
 import { ActivatedRoute, Router } from '@angular/router';
-
 import { LoginUsuariosComponent } from '../tio/login-usuarios/login-usuarios.component';
-
 import { Location } from "@angular/common";
+import { TokenService } from 'src/app/accederwebtoken/token.service';
+
 
 @Component({
   selector: 'app-menu',
@@ -28,7 +27,11 @@ export class MenuComponent implements OnInit {
   email = 'zddfdfdsfd';
   password = '';
   usuariologeado = false;
-  constructor(location: Location, private router: Router, private store: Store<AppState>) {
+  constructor(
+    location: Location, 
+    private router: Router, 
+    private tokenService: TokenService,
+    private store: Store<AppState>) {
     this.login = this.store.select('login');
     if(localStorage.getItem('login')){
       const usuario = JSON.parse(localStorage.getItem('login'))
@@ -59,6 +62,7 @@ export class MenuComponent implements OnInit {
     this.usuariologeado = false;
     this.store.dispatch(new TaskActions.InicioUsuario(usuario) )
     this.router.navigate(['/login']);
+    this.tokenService.logout();
   }
 
   ngOnInit() {

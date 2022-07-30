@@ -87,11 +87,45 @@ export class TokenService {
     return response;
   }
 
+
   async login(tio: Tio) {
-    var token = "";
+    var token:string = "";
     const user = {
-        "username":"randomuser123",
-        "password":"password"
+      "username": tio.nombre,
+      "password": tio.password
+    }
+    try{
+        var response;
+        response = await this.httpClient.post<any>(this.tokenURL + 'login', user).toPromise();
+        if(response){
+            token = response.token;
+            window.localStorage.removeItem('token');
+            window.localStorage.setItem('token', token);   
+        }
+    }catch(e){
+        console.log(e);
+    }
+  } 
+
+  async logout() {
+    try{
+        window.localStorage.removeItem('token');
+    }catch(e){
+        console.log(e);
+    }
+  } 
+
+  async login2() {
+    var token = "";
+    //const username:string = "randomuser123";
+    //const password:string = "password";
+  
+    const username:string = "luis13711";
+    const password:string = "123456";
+
+    const user = {
+      "username": username,
+      "password": password
     }
     try{
         var response;
