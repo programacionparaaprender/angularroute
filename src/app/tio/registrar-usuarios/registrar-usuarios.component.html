@@ -7,14 +7,30 @@
       <h3>name: {{ task.nombre }} </h3>
     </li>
   </ul> -->
-    <form (ngSubmit)="onCreate()" novalidate>
+    <form 
+        (ngSubmit)="onCreate()" 
+        [formGroup]="registerForm">
         <div class="form-group">
             <label for="nombre">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+            <input 
+                type="text" 
+                class="form-control" 
+                id="nombre" 
+                name="nombre" 
+                [(ngModel)]="nombre" 
+                formControlName="nombre" 
+                required>
         </div>
         <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email" required>
+            <input 
+                type="email" 
+                class="form-control" 
+                id="email" 
+                name="email" 
+                [(ngModel)]="email" 
+                formControlName="email" 
+                required>
         </div>
         <div class="form-group">
             <label for="password">Password:</label>
@@ -23,6 +39,7 @@
                 class="form-control" 
                 id="password" 
                 name="password" 
+                formControlName="password" 
                 [(ngModel)]="password" required>
         </div>
         <div class="btn-group" role="group" aria-label="Basic example">
