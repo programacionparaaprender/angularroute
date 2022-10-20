@@ -17,6 +17,7 @@ import { loginReducer } from 'src/app/store/login.reducer';
 import { Tio } from 'src/app/models/tio';
 import { TioService } from 'src/app/tio/tio.service';
 import { of } from 'rxjs/internal/observable/of';
+//LoginUsuariosComponent
 
 describe('TioService', () => {
   beforeEach(async () => {
@@ -79,8 +80,86 @@ describe('TioService', () => {
         }];
     tioService.lista().subscribe(data=>{
         expect(data).toEqual(checkData);
+    },(error)=>{
+      console.log(error)
     });
   }));
+  it('Comparar tamaño de la lista debe ser 6', inject([TioService], (tioService: TioService) => {
+    
+    tioService.lista().subscribe(data=>{
+        expect(data.length).toEqual(6);
+    },(error)=>{
+      console.log(error)
+    });
+  }));
+
+  it('Error por url incorrecta', inject([TioService], (tioService: TioService) => {
+    var tio = 
+      {
+          nombre:"luis1371113711",
+          email:"alberto13711@gmail.com",
+          password:"12345678"
+      };
+    var checkData = 
+      {
+          id:1,
+          nombre:"luis13711",
+          email:"alberto13711@gmail.com",
+          password:"123456"
+      };
+    const url:string = 'http://localhost:8762/api/tio/';
+    tioService.loginObservableUrol(url, tio).subscribe(data=>{
+        expect(data.data).toEqual(checkData);
+    },(error)=>{
+      console.log(error)
+      expect(error.response.status).toEqual(400);
+    });
+  }));
+
+
+//pendiente verificar
+  it('Debe retornar un error al hacer mal el login', inject([TioService], (tioService: TioService) => {
+    var tio = 
+      {
+          nombre:"luis1371113711",
+          email:"alberto13711@gmail.com",
+          password:"12345678"
+      };
+    var checkData = 
+      {
+          id:1,
+          nombre:"luis13711",
+          email:"alberto13711@gmail.com",
+          password:"123456"
+      };
+    tioService.loginObservable(tio).subscribe(data=>{
+        expect(data.data).toEqual(checkData);
+    },(error)=>{
+      console.log(error)
+    });
+  }));
+
+  it('Comparar valor retornado luego del login', inject([TioService], (tioService: TioService) => {
+    var tio = 
+      {
+          nombre:"luis13711",
+          email:"alberto13711@gmail.com",
+          password:"123456"
+      };
+    var checkData = 
+      {
+          id:1,
+          nombre:"luis13711",
+          email:"alberto13711@gmail.com",
+          password:"123456"
+      };
+    tioService.loginObservable(tio).subscribe(data=>{
+        expect(data.data).toEqual(checkData);
+    },(error)=>{
+      console.log(error)
+    });
+  }));
+
   it('Se obtiene una lista de usuarios', () => {
     var tioService = TestBed.get(TioService);
     tioService.lista = jasmine.createSpy().and.returnValue(of(true));
