@@ -96,10 +96,18 @@
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "codeCoverage": true
           }
         },
         "lint": {
+
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+              "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+          }
+        },
+        "lint2": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [

@@ -8,6 +8,7 @@
     "build": "ng build",
     "github": "ng deploy --base-href=https://programacionparaaprender.github.io/angularroute/",
     "test": "ng test",
+    "test3": "ng test --codeCoverage=true",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -40,6 +41,11 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.1",
+    "@angular-eslint/builder": "^4.3.0",
+    "@angular-eslint/eslint-plugin": "^4.3.0",
+    "@angular-eslint/eslint-plugin-template": "^4.3.0",
+    "@angular-eslint/schematics": "^4.3.0",
+    "@angular-eslint/template-parser": "^4.3.0",
     "@angular/cli": "~9.1.1",
     "@angular/compiler-cli": "~9.1.1",
     "@angular/language-service": "~9.1.1",

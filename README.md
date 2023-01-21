@@ -5,3 +5,19 @@
 4 dentro de frontend/tomcat_publish/salida gitbash(unix, linux) si usas java 7 'C:\Program Files\Java\jdk1.7.0_80\bin\jar.exe' cvf angularroute.war *
 5 copiar angularroute.war y pegar en otra ruta para que no se borre, se encuentra en frontend/tomcat_publish/salida/
 
+### habilitar el coverage
+https://www.tutorialspoint.com/angular_cli/angular_cli_code_coverage.htm
+
+### habilitar eslint
+@angular-devkit/build-angular": "~0.1102.12",
+"@angular-eslint/builder": "4.3.0",
+"@angular-eslint/eslint-plugin": "4.3.0",
+"@angular-eslint/eslint-plugin-template": "4.3.0",
+"@angular-eslint/schematics": "4.3.0",
+"@angular-eslint/template-parser": "4.3.0",
+
+npm install --save @angular-eslint/builder@4.3.0
+npm install --save @angular-eslint/eslint-plugin@4.3.0
+npm install --save @angular-eslint/eslint-plugin-template@4.3.0
+npm install --save @angular-eslint/schematics@4.3.0
+npm install --save @angular-eslint/template-parser@4.3.0
