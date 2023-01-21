@@ -10,8 +10,8 @@ import axios from "axios";
 })
 
 export class TioService {
-  tioURL = 'http://localhost:8762/api/tio/';
-  //tioURL = 'https://servicios-profesionales.herokuapp.com/tio/';
+  //tioURL = 'http://localhost:8762/api/tio/';
+  tioURL = 'https://servicios-profesionales.herokuapp.com/tio/';
   usuariologeado = false;
   constructor(private httpClient: HttpClient) { }
 
@@ -42,6 +42,14 @@ export class TioService {
       return e.response;
     }
   }
+  loginObservable(tio: Tio): Observable<any>{
+    return  this.httpClient.post<any>(this.tioURL+'login', tio);
+  }
+
+  loginObservableUrol(url:string, tio: Tio): Observable<any>{
+    return  this.httpClient.post<any>(url+'login', tio);
+  }
+
   async registrar(tio: Tio){
     try{
       var response;

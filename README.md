@@ -21,3 +21,9 @@ npm install --save @angular-eslint/eslint-plugin@4.3.0
 npm install --save @angular-eslint/eslint-plugin-template@4.3.0
 npm install --save @angular-eslint/schematics@4.3.0
 npm install --save @angular-eslint/template-parser@4.3.0
+
+
+### pruebas unitarias a inyectables
+https://medium.com/practical-angular-karma-testing/testing-angular-injectables-in-practice-part-1-bfde2e02fb35
+
+
