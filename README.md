@@ -1,3 +1,23 @@
+### curso sonarqube
+https://udemy.com/course/sonarqube
+
+### página de scanner
+https://docs.sonarqube.org/latest/analyzing-source-code/scanners/sonarscanner/
+
+### primero  
+cd refugio 
+luego ejecutar comandos
+
+### comando token
+### comando empleando token
+C:\sonarqube-8.9.10.61524\ss-4.7.x-php\bin\
+
+sonar-scanner -Dsonar.login=1dafde238dbde9821ab0fbc409e56008401b7fb0 -Dsonar.host.url=http://localhost:9000 -Dsonar.projectName=angularroute -Dsonar.projectKey=angularrouteID -Dsonar.projectVersion=1.0 -Dsonar.sources=.
+
+### comando login
+
+sonar-scanner -Dsonar.host.url=http://localhost:9000 -Dsonar.login=admin -Dsonar.password=admin -Dsonar.projectName=angularroute -Dsonar.projectKey=angularrouteID -Dsonar.projectVersion=1.0 -Dsonar.sources=.
+
 ### realizar publicación en apache tomcat
 1 con powershell node .\node_modules\@angular\cli\bin\ng build --base-href="/angularroure/" --output-path="tomcat_publish/salida" 
 2 abrir la carpeta salida ruta frontend/tomcat_publish/

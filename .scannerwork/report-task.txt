@@ -1,0 +1,6 @@
+projectKey=angularrouteID
+serverUrl=http://localhost:9000
+serverVersion=7.2.1.14109
+dashboardUrl=http://localhost:9000/dashboard?id=angularrouteID
+ceTaskId=AYXb4i50N8WijL7DLd2J
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYXb4i50N8WijL7DLd2J
