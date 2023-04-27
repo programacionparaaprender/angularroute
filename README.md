@@ -8,11 +8,46 @@ https://docs.sonarqube.org/latest/analyzing-source-code/scanners/sonarscanner/
 cd refugio 
 luego ejecutar comandos
 
+### corrección de error de moment
+https://stackoverflow.com/questions/62273153/this-module-is-declared-with-using-export-and-can-only-be-used-with-a-defau
+
 ### comando token
 ### comando empleando token
+```
 C:\sonarqube-8.9.10.61524\ss-4.7.x-php\bin\
-
 sonar-scanner -Dsonar.login=1dafde238dbde9821ab0fbc409e56008401b7fb0 -Dsonar.host.url=http://localhost:9000 -Dsonar.projectName=angularroute -Dsonar.projectKey=angularrouteID -Dsonar.projectVersion=1.0 -Dsonar.sources=.
+```
+### error consumo de memoria css
+```
+"development": {
+                            "fileReplacements": [
+                                {
+                                    "replace": "src/environments/environment.ts",
+                                    "with": "src/environments/environment.dev.ts"
+                                }
+                            ],
+                            "optimization": true,
+                            "outputHashing": "all",
+                            "sourceMap": false,
+                            "namedChunks": false,
+                            "extractLicenses": true,
+                            "vendorChunk": false,
+                            "buildOptimizer": true,
+                            "budgets": [
+                                {
+                                    "type": "initial",
+                                    "maximumWarning": "5mb",
+                                    "maximumError": "4mb"
+                                },
+                                {
+                                    "type": "anyComponentStyle",
+                                    "maximumWarning": "1mb",
+                                    "maximumError": "1mb"
+                                }
+                            ]
+                        }
+```
+
 
 ### comando login
 
