@@ -91,7 +91,7 @@ import { RegistrarUsuariosComponent } from './tio/registrar-usuarios/registrar-u
 import { TokenJavaComponent } from './accederwebtoken/tokenjava/tokenjava.component';
 
 import { TokenizedInterceptorProviders } from "src/app/services/tokenized.interceptor.service";
-
+import { ContadorAutomaticoComponent } from './contador-automatico/contador-automatico.component';
 @NgModule({
   declarations: [
     TokenJavaComponent,
@@ -108,7 +108,8 @@ import { TokenizedInterceptorProviders } from "src/app/services/tokenized.interc
     LoginUsuariosComponent,
     ActualizarTioComponent,
     RegistrarUsuariosComponent,
-    BlockChainComponent
+    BlockChainComponent,
+    ContadorAutomaticoComponent
   ],
   imports: [
     

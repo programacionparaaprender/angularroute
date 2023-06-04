@@ -19,6 +19,8 @@ import { BlockChainComponent } from './blockchain/blockchain.component';
 import { Tio } from './models/tio'
 import { TokenJavaComponent } from './accederwebtoken/tokenjava/tokenjava.component';
 
+import { ContadorAutomaticoComponent } from './contador-automatico/contador-automatico.component';
+
 var usuario: Tio = {
   id: 1,
   nombre: "error",
@@ -33,12 +35,13 @@ if(localStorage.getItem('login')){
 }
 
 const routes: Routes = [
-  { path: '',  redirectTo: '/tokenjava', pathMatch: 'full' },
+  { path: '',  redirectTo: '/contador', pathMatch: 'full' },
   {path: 'tokenjava' , component: TokenJavaComponent},
   {path: 'blockchain' , component: BlockChainComponent},
   {path: 'blockchain' , component: BlockChainComponent},
   {path: 'login' , component: LoginUsuariosComponent},
   {path: 'registro' , component: RegistrarUsuariosComponent},
+  {path: 'contador' , component: ContadorAutomaticoComponent},
   {
     path: 'vieja' , component: ViejaComponent
   },
