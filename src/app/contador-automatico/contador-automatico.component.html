@@ -6,6 +6,21 @@
   <div class="card-body">
     <form>
       <h2> tiempo: {{ tiempo }}</h2>
+      <div class="input-group mb-3 classBorde">
+        <input
+            class="form-control classIcono"
+            type="text"
+            placeholder="ejemplo de entrada"
+            formControlName="inputCliente"
+            inputNumericFilter
+            required
+        />
+        <div class="input-group-prepend">
+            <span class="input-group-text classIcono" id="basic-addon1">
+                <i class="classAclarar" icon="add_circle"></i>
+            </span>
+        </div>
+      </div>
       <div class="btn-group" role="group" aria-label="Basic example">
         <button type="button" class="btn btn-primary" (click)="iniciar()">Comenzar Timer</button>
         <button type="button" class="btn btn-warning" (click)="detener()">Detener Timer</button>

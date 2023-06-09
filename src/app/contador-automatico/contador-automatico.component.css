@@ -3,3 +3,19 @@
   display: block;
   height: 3rem;
 }
+
+.classIcono {
+  border: 0px !important;
+  background-color: white !important;
+}
+
+.classBorde {
+  border: 1px #ccc solid !important;
+  background-color: white !important;
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+}
+
+.classAclarar {
+  color: #ccc;
+}

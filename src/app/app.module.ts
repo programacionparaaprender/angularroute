@@ -92,8 +92,12 @@ import { TokenJavaComponent } from './accederwebtoken/tokenjava/tokenjava.compon
 
 import { TokenizedInterceptorProviders } from "src/app/services/tokenized.interceptor.service";
 import { ContadorAutomaticoComponent } from './contador-automatico/contador-automatico.component';
+
+import { NumeroDirective } from 'src/app/commons/validators/numero.directive';
+
 @NgModule({
   declarations: [
+    NumeroDirective,
     TokenJavaComponent,
     AppComponent,
     AddTaskComponent,
