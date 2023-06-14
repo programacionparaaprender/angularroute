@@ -20,7 +20,7 @@ import { Tio } from './models/tio'
 import { TokenJavaComponent } from './accederwebtoken/tokenjava/tokenjava.component';
 
 import { ContadorAutomaticoComponent } from './contador-automatico/contador-automatico.component';
-
+import { QuarkusComponent } from './quarkus/quarkus.component';
 var usuario: Tio = {
   id: 1,
   nombre: "error",
@@ -36,6 +36,7 @@ if(localStorage.getItem('login')){
 
 const routes: Routes = [
   { path: '',  redirectTo: '/contador', pathMatch: 'full' },
+  {path: 'quarkus' , component: QuarkusComponent},
   {path: 'tokenjava' , component: TokenJavaComponent},
   {path: 'blockchain' , component: BlockChainComponent},
   {path: 'blockchain' , component: BlockChainComponent},
