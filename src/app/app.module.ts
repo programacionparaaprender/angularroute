@@ -94,9 +94,10 @@ import { TokenizedInterceptorProviders } from "src/app/services/tokenized.interc
 import { ContadorAutomaticoComponent } from './contador-automatico/contador-automatico.component';
 import { QuarkusComponent } from './quarkus/quarkus.component';
 import { NumeroDirective } from 'src/app/commons/validators/numero.directive';
-
+import { LegsComponent } from './applications/views/legs/legs.component';
 @NgModule({
   declarations: [
+    LegsComponent,
     QuarkusComponent,
     NumeroDirective,
     TokenJavaComponent,
