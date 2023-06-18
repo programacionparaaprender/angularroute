@@ -23,6 +23,12 @@ export class TioService {
     this.usuariologeado = valor;
   }
 
+  async lista2() {
+    const response = await this.lista().toPromise();
+    const lista = (response as Tio[]);
+    return lista;
+  }
+
   lista(): Observable<Tio[]> {
     return this.httpClient.get<Tio[]>(this.tioURL + 'lista');
   }

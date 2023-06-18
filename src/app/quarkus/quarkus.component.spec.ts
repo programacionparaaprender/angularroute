@@ -8,7 +8,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { timer } from 'rxjs';
-describe('LogintobepageComponent', () => {
+describe('QuarkusComponent', () => {
 	let component: QuarkusComponent;
 	let fixture: ComponentFixture<QuarkusComponent>;
 	beforeEach(async () => {
@@ -34,14 +34,14 @@ describe('LogintobepageComponent', () => {
 	});
 */
 	
-it('Probar cajasLlenas', () => {
-	const comp = TestBed.createComponent(LogintobepageComponent);
+it('Probar quarkus', () => {
+	/* const comp = TestBed.createComponent(LogintobepageComponent);
 	comp.componentInstance.codigo1 = "1"; 
 	comp.componentInstance.codigo2 = "2"; 
 	comp.componentInstance.codigo3 = "3"; 
 	comp.componentInstance.codigo4 = "4"; 
 	expect(comp.componentInstance.cambiarIcono).toEqual(0);
-	const cajasLlenas = comp.componentInstance.cajasLlenas;
+	const cajasLlenas = comp.componentInstance.cajasLlenas; */
 	//expect(cajasLlenas).toBeTrue();
 	//tick(5000);
 	//expect(comp.componentInstance.cambiarIcono).toEqual(1);

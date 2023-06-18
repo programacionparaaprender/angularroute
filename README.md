@@ -1,5 +1,17 @@
-### curso sonarqube
-https://udemy.com/course/sonarqube
+### cursos 
+>- https://udemy.com/course/sonarqube
+>- https://udemy.com/course/angular-jasmine-karma
+
+### enlace karma
+>- github.com/karma-nunner/karma-coverage/blob/master/README.md
+>- npm install karma karma-coverage --save-dev
+>- comentar en karma.conf.js //require('karma-coverage-istanbul-reporter'),
+>- agregar en karma.conf.js require('karma-coverage'),
+
+### json-server
+>- github.com/typicode/json-server
+>- npm install -g json-server
+>- json-server --watch db.json
 
 ### página de scanner
 https://docs.sonarqube.org/latest/analyzing-source-code/scanners/sonarscanner/
