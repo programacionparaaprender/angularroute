@@ -1,4 +1,4 @@
-import { inject, TestBed } from '@angular/core/testing';
+import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 
 import { RegistrarUsuariosComponent } from 'src/app/tio/registrar-usuarios/registrar-usuarios.component';
 
@@ -59,12 +59,13 @@ var tiosBDServicio: Tio[] = [
   }];
 
 describe('TioService', () => {
-
+  let component: RegistrarUsuariosComponent;
+  let fixture: ComponentFixture<RegistrarUsuariosComponent>;
   
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-        providers:[ TioService ],
-        declarations: [],
+        providers: [TioService],
+        declarations: [RegistrarUsuariosComponent],
       imports:[
         FormsModule, 
         ReactiveFormsModule,
@@ -80,6 +81,11 @@ describe('TioService', () => {
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
     }).compileComponents();
+  });
+  beforeEach(() => {
+    fixture = TestBed.createComponent(RegistrarUsuariosComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
   });
   /*
   beforeEach(() => {
@@ -100,6 +106,17 @@ describe('TioService', () => {
     fixture.detectChanges();
   });
 */
+
+/*
+it('getBook get books from the subscription', () => {
+  // const bookService = fixture.debugElement.injector.get(BookService);
+  // const spy1 = spyOn(bookService, 'getBooks').and.returnValue(of(listBook));
+  component.getTios();
+  // expect(spy1).toHaveBeenCalled();
+  expect(component.tios.length).toBe(6);
+});
+*/
+
   it('Comparar listas de usuarios', inject([TioService], (tioService: TioService) => {
     
     tioService.lista().subscribe(data=>{
@@ -183,18 +200,5 @@ describe('TioService', () => {
       console.log(error)
     });
   }));
-
-  it('Se obtiene una lista de usuarios', () => {
-    var tioService = TestBed.get(TioService);
-    tioService.lista = jasmine.createSpy().and.returnValue(of(true));
-    //const methodSpy = spyOn(tioService, 'cambiarLogeo');
-    /* const tio:Tio = {
-        nombre:"luis13711",
-        email:"alberto13711@gmail.com",
-        password:"123456"
-    };
-    tioService.login(tio); */
-    //expect(methodSpy).toHaveBeenCalled();
-  });
 
 });

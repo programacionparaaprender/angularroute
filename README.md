@@ -1,12 +1,20 @@
 ### cursos 
 >- https://udemy.com/course/sonarqube
 >- https://udemy.com/course/angular-jasmine-karma
+>- https://udemy.com/course/angular-jasmine-karma/learn/lecture/25126866#overview
+>- https://www.udemy.com/course/angular-introduccion-a-pruebas-unitarias-y-tdd-en-espanol/learn/lecture/21281168#overview
 
 ### enlace karma
 >- github.com/karma-nunner/karma-coverage/blob/master/README.md
 >- npm install karma karma-coverage --save-dev
 >- comentar en karma.conf.js //require('karma-coverage-istanbul-reporter'),
 >- agregar en karma.conf.js require('karma-coverage'),
+
+### mejorar presentación de reporte unitario en el terminal
+>- https://www.npmjs.com/package/karma-mocha-reporter
+>- npm install --save-dev karma-mocha-reporter
+>- añadir luego al archivo karma.conf.js require('karma-mocha-reporter')
+>- modificar reporters: ['progress', 'kjhtml'], a reporters: ['mocha', 'kjhtml'],
 
 ### json-server
 >- github.com/typicode/json-server
