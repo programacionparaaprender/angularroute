@@ -73,7 +73,7 @@ sonar-scanner -Dsonar.login=1dafde238dbde9821ab0fbc409e56008401b7fb0 -Dsonar.hos
 
 sonar-scanner -Dsonar.host.url=http://localhost:9000 -Dsonar.login=admin -Dsonar.password=admin -Dsonar.projectName=angularroute -Dsonar.projectKey=angularrouteID -Dsonar.projectVersion=1.0 -Dsonar.sources=.
 
-### realizar publicación en apache tomcat
+### realizar publicación en apache tomcat o rethad 7.2 EAP
 1 con powershell node .\node_modules\@angular\cli\bin\ng build --base-href="/angularroure/" --output-path="tomcat_publish/salida" 
 2 abrir la carpeta salida ruta frontend/tomcat_publish/
 3 copiar la carpeta WEB-INF dentro de salida ruta frontend/tomcat_publish/salida/

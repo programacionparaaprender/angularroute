@@ -95,8 +95,12 @@ import { ContadorAutomaticoComponent } from './contador-automatico/contador-auto
 import { QuarkusComponent } from './quarkus/quarkus.component';
 import { NumeroDirective } from 'src/app/commons/validators/numero.directive';
 import { LegsComponent } from './applications/views/legs/legs.component';
+import { MenuNuevoComponent } from './menu-nuevo/menu-nuevo.component';
+import { MasterAspNetComponent } from './master-aspnet/master-aspnet.component';
 @NgModule({
   declarations: [
+    MasterAspNetComponent,
+    MenuNuevoComponent,
     LegsComponent,
     QuarkusComponent,
     NumeroDirective,

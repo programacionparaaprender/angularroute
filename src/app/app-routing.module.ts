@@ -22,6 +22,7 @@ import { TokenJavaComponent } from './accederwebtoken/tokenjava/tokenjava.compon
 import { ContadorAutomaticoComponent } from './contador-automatico/contador-automatico.component';
 import { QuarkusComponent } from './quarkus/quarkus.component';
 import { LegsComponent } from './applications/views/legs/legs.component';
+import { MasterAspNetComponent } from './master-aspnet/master-aspnet.component';
 var usuario: Tio = {
   id: 1,
   nombre: "error",
@@ -36,7 +37,8 @@ if(localStorage.getItem('login')){
 }
 
 const routes: Routes = [
-  { path: '',  redirectTo: '/contador', pathMatch: 'full' },
+  { path: '',  redirectTo: '/masteraspnet', pathMatch: 'full' },
+  {path: 'masteraspnet' , component: MasterAspNetComponent},
   {path: 'legs' , component: LegsComponent},
   {path: 'quarkus' , component: QuarkusComponent},
   {path: 'tokenjava' , component: TokenJavaComponent},
