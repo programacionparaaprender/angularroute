@@ -4,6 +4,18 @@
 >- https://udemy.com/course/angular-jasmine-karma/learn/lecture/25126866#overview
 >- https://www.udemy.com/course/angular-introduccion-a-pruebas-unitarias-y-tdd-en-espanol/learn/lecture/21281168#overview
 
+
+### docker
+>- https://github.com/pedrovelasquez9/springboot-postgresql-docker-compose/blob/master/angular/my-front-app/dockerfile
+>- docker build -t angular-ideas:2.0 .
+>- docker rmi image_id
+>- docker run -p 4200:4200 fc1a701c5507 -d
+>- docker stop bcf1cc578e43
+>- docker-compose build
+>- docker-compose up
+>- docker-compose down
+>- docker image rm afd 801
+
 ### enlace karma
 >- github.com/karma-nunner/karma-coverage/blob/master/README.md
 >- npm install karma karma-coverage --save-dev
